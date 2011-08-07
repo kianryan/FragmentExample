@@ -14,7 +14,7 @@
 
     <fragment android:name="com.orangetentacle.fragmentexample.Fragment2"
               android:id="@+id/fragment2"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
 
