@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,11 +16,24 @@ import android.view.ViewGroup;
  */
 public class Fragment2 extends Fragment{
 
+    public TextView textView;
+
         @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.fragment2, container, false);
+        View view = inflater.inflate(R.layout.fragment2, container, false);
+        textView = (TextView) view.findViewById(R.id.textView2);
+        return view;
+    }
+
+    public void setText(String text)
+    {
+        textView.setText(text);
+    }
+
+    public interface OnButton2ClickedListener {
+        public void onButton2Clicked();
     }
 
 }
