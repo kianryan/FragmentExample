@@ -2,6 +2,19 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_height="fill_parent"
+        android:background="#00FF00FF">
+
+        <Button android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Button2"
+            />
+
+    <TextView android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Button Not Clicked"
+            />
 
 </LinearLayout>
